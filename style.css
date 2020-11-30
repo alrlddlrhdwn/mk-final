@@ -1,0 +1,139 @@
+div { text-align: center; }
+
+* {
+  box-sizing: border-box;
+}
+.center {
+    margin: auto
+}
+
+/* 헤더 */
+.header {
+  height: 300px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+/* 본문 */
+
+body {
+  font-family: sans-serif;
+  color: rgb(0, 0, 0);
+  margin: 0;
+}
+
+/* 컨테이너 속성 */
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: rgb(2, 2, 2);
+}
+
+.container {
+  text-align: center;
+}
+
+.life,
+.after,
+.work,
+.peace,
+.pants,
+.etc {
+  box-sizing: border-box;
+  width: auto;
+  padding: 10;
+}
+
+p {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+h2 {
+  text-align: center;
+  color: black;
+}
+
+/* 네비게이션 바 */
+.navbar {
+  display: flex;
+  justify-content: center;
+  border-bottom: 3px solid #333;
+  font-weight: 600;
+}
+
+/* 네비게이션 바 가상선택자 */
+.navbar a {
+  color: #333;
+  padding: 30px;
+  margin-top: 5px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* 커서 올려놨을때 색변화 */
+.navbar a:hover {
+  background-color: #ff00c8;
+  color: #fff;
+}
+
+/* 사진 */
+
+.main-container {
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.grid-container {
+  height: 30%;
+  width: 30%;
+  margin: 10px 1em;
+  padding-left: 10px;
+  padding-right: 10px;
+  flex: 0 1;
+  justify-content: stretch;
+  align-content: space-around;
+}
+
+@media (max-width: 700px) {
+  .main-container {
+    padding: 8px;
+  }
+  .grid-container {
+    flex: 0 1;
+  }
+}
+
+img {
+  width: auto; 
+  max-height: auto;
+  margin: auto;
+}
+
+/* Footer */
+.footer {
+  height: 60;
+  margin-top: 50px;
+  text-align: center;
+  background: rgb(255, 0, 212);
+  color: white;
+}
+
+/* 반응형 레이아웃 */
+@media screen and (max-width: 700px) {
+  .navbar,
+  .container,
+  .wrapper,
+  body {
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+  }
+}
